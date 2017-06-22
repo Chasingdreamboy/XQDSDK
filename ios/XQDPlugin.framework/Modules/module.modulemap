@@ -1,0 +1,6 @@
+framework module XQDPlugin {
+  umbrella header "XQDPlugin.h"
+
+  export *
+  module * { export * }
+}

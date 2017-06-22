@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.treefinance.gfd" version="0.1.5" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    
+    <!--1 设置／获取本地持久化配置-->
+    <feature name="AppConfig">
+        <param name="ios-package" value="XQDConfigPlugin" />
+    </feature>
+     <!-- 2   对控制器进行操作，例如 push／pop等-->
+    <feature name="Controller">
+        <param name="ios-package" value="XQDControllerPlugin" />
+    </feature>
+    <!-- 3   设置navigationBar的相关属性-->
+    <feature name="NavBar">
+        <param name="ios-package" value="XQDNavBarPlugin" />
+    </feature>
+    <!--4    设置webview相关属性-->
+    <feature name="WebView">
+        <param name="ios-package" value="XQDWebViewPlugin" />
+    </feature>
+    <!--5    埋点操作-->
+    <feature name="BusinessLog">
+        <param name="ios-package" value="XQDBusinessPlugin" />
+    </feature>
+    <!--6    获取地理位置-->
+    <feature name="Geolocation">
+        <param name="ios-package" value="XQDLocationPlugin" />
+    </feature>
+    <!--7    打开相机-->
+    <feature name="OpenCamera">
+        <param name="ios-package" value="XQDCameraPlugin" />
+    </feature>
+    <!--8    打开通讯录-->
+    <feature name="OpenAddressBook">
+        <param name="ios-package" value="XQDContactsPlugin" />
+    </feature>
+    <!--9    打开网页，如邮箱-->
+    <feature name="OpenWebView">
+        <param name="ios-package" value="XQDHookPlugin" />
+    </feature>
+    <!--10  检测设备是否越狱-->
+    <feature name="JailBreak">
+        <param name="ios-package" value="XQDJailPlugin" />
+    </feature>
+    <!--11    参数加密-->
+    <feature name = "Encrypt">
+        <param name = "ios-package" value = "XQDEncryptPlugin" />
+    </feature>
+    <!--12    使用safari打开网页-->
+    <feature name = "App">
+        <param name = "ios-package" value = "XQDUrlPlugin" />
+    </feature>
+    <!--13    保存图片-->
+    <feature name = "SaveImage">
+        <param name = "ios-package" value = "XQDImagePlugin" />
+    </feature>
+
+    <!--14 展示原生的加载信息-->
+    <feature name="Progress">
+        <param name="ios-package" value="XQDProgressPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <!--15 选择指定tabBar并进行操作-->
+    <feature name="TabBar">
+        <param name="ios-package" value="XQDTabbarPlugin" />
+    </feature>
+    
+    <!--16    打开银联支付-->
+    <feature name="UnionPay">
+        <param name="ios-package" value="DSCordovaOpenUnionpay" />
+    </feature>
+    <!--17  微信分享-->
+    <feature name = "Share">
+        <param name = "ios-package" value = "DSSharePlugin" />
+    </feature>
+    <!--18 支付宝-->
+    <feature name = "Pay">
+        <param name = "ios-package" value = "XQDPayPlugin" />
+    </feature>
+    
+    <name>功夫贷</name>
+    <description>
+        功夫贷，一会儿“功夫”钱就到了
+    </description>
+    <author email="dashuadmin@treefinance.com.cn" href="https://www.treefinance.com.cn">
+        杭州大树网络技术公司
+    </author>
+    <content src="home.html" />
+    
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <allow-intent href="gfdapp://*/*"/>
+    <allow-intent href="gfdbridge://*/*"/>
+    <allow-intent href="itms:*" />
+    <allow-intent href="mqq:*" />
+    <allow-intent href="mqqwpa:*" />
+    <allow-intent href="itms-apps:*" />
+    <allow-navigation href="https://" />
+    <allow-navigation href="http://" />
+</widget>
